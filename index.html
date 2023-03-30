@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamir Pro BASE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="flex-container">
+
+        <div class="info">
+            <div>
+                <h2>Tamir Dayan</h2>
+                
+                <hr>
+                <h4>Pro Skydiver and BASE Jumper</h4>
+                <hr>
+
+                <div style="text-align: justify;">
+                    Jumping out of things or from mountains is a pasission I've been following for almost 15 years. <br>
+                    A journey that started with just myself jumping from a plane continue to grow until I was the one teaching people to jump. from things. <br>
+                    I have a wide range of skills and experience in jumping from any object to filming those extreme activities. <br>
+                    
+                </div>
+                <br>
+                <div class="list">
+                    
+                    <a href="https://www.facebook.com/tamir.dayan.50/" class="button"><i class="fa-brands fa-facebook-f"></i></a>
+                        
+                        
+                    <a href="https://www.youtube.com/playlist?list=PL686Y4DgqVh2RsmGhPOpWPV6Fdpncqc0c" class="button"><i class="fa-brands fa-youtube"></i></a>
+                        
+                    
+                     <a href="https://www.instagram.com/tamirextreme/?hl=en" class="button"><i class="fa-brands fa-instagram"></i></a>
+                        
+                </div>
+                <div>
+                    <button class="contact">CONTACT ME</button>
+                </div>
+
+                <div id="contactForm">
+                    <h1 id="closeForm">X</h1>
+                    <form action="https://formsubmit.co/tamird84@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="New email from portfolio">
+                        <!-- <input type="hidden" name="_next" value="https://"> -->
+                        <label for="">Name:</label>
+                        <input type="text" name="name" placeholder="John Doe" required>
+                        <label for="">Email:</label>
+                        <input type="email" name="email" placeholder="john123@gmail.com" required style="width: 250px;">
+                        <label for="">What's on your mind?</label>
+                        <textarea name="text_request" id="text" placeholder="What would you like to know?" required></textarea>
+                        <button type="submit" id="submit_btn" style="width: 130px; display: block; margin: 4px auto;">Send</button>
+                    </form>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+        <div class="image-container">
+            <!-- <img src="media/me_helicopter.jpg" alt="Broken link" class="self-pic"> -->
+        </div>
+    </div>
+
+<script>
+    var form = document.getElementById("contactForm");
+    var btn = document.querySelector(".contact");
+    var closeForm = document.getElementById("closeForm");
+    btn.addEventListener("click", showForm);
+    closeForm.addEventListener("click", showForm);
+
+    function showForm() {
+        console.log("click")
+        if(form.style.opacity == 0){
+            form.style.opacity = 1;
+            form.style.zIndex = 2;
+        } else {
+            form.style.opacity = 0;
+            form.style.zIndex = -2;
+        }
+    }
+</script>
+</body>
+</html>
