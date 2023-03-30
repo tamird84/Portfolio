@@ -141,7 +141,7 @@ form {
     }
     .flex-container {
         flex-direction: column-reverse;
-        margin: 0 3rem;
+        margin: 10px;
     }
 
     .image-container {
